@@ -29,5 +29,7 @@ jobs:
       run: npm install -D @playwright/test
     - name: Install pack
       run: npm install --save-dev mocha
+    - name: Build
+      run: npm build
     - name: Test program code with unit tests
       run: npx playwright test tests/ui.test.js

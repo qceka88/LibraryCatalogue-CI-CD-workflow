@@ -34,4 +34,4 @@ jobs:
          ls -l tests/
          chmod +x tests/ui.test.js
     - name: Test program code with unit tests
-      run: /path/to/npx playwright test tests/ui.test.js
+      run: npx playwright test tests/ui.test.js

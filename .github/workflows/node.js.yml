@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Install npm pack & Build the program
+    - name: Install npm pack & Dependencies
       run: npm install
     - name: Install pack for test module
       run: npm install -D @playwright/test

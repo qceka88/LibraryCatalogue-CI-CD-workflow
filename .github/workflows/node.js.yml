@@ -27,7 +27,5 @@ jobs:
       run: npm install
     - name: Install pack for test module
       run: npm install -D @playwright/test
-    - name: Run the Server
-      run: node server/server.js
     - name: Test program code with unit tests
       run: npx playwright test tests/ui.test.js

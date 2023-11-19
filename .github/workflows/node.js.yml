@@ -34,7 +34,7 @@ jobs:
           ls -l tests/
           chmod +x tests/ui.test.js
       - name: Test program code with unit tests
-        run: /path/to/node_modules/.bin/playwright test tests/ui.test.js
+        run: node_modules/.bin/playwright test tests/ui.test.js
 
   deploy:
     runs-on: ubuntu-latest

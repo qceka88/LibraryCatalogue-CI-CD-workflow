@@ -29,6 +29,8 @@ jobs:
         run: npm install --save-dev mocha
       - name: Install Playwright
         run: npm install -D playwright
+      - name: Install Playwright browsers
+        run: npx playwright install
       - name: Check and Modify File Permissions
         run: |
           ls -l node_modules/.bin/playwright

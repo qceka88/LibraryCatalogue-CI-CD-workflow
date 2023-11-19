@@ -30,8 +30,6 @@ jobs:
     - name: Install Playwright
       run: npm install -D playwright
     - name: Check and Modify File Permissions
-      run: |
-         ls -l tests/
-         chmod +x tests/ui.test.js
+      run: chmod +x tests/ui.test.js
     - name: Test program code with unit tests
       run: /usr/bin/npx playwright test tests/ui.test.js

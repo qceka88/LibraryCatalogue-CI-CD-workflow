@@ -27,5 +27,11 @@ jobs:
       run: npm install
     - name: Install pack
       run: npm install --save-dev mocha
+    - name: Install Playwright
+      run: npm install -D playwright
+    - name: Check and Modify File Permissions
+      run: |
+         ls -l tests/
+         chmod +x tests/ui.test.js
     - name: Test program code with unit tests
-      run: npx playwright test tests/ui.test.js
+      run: /path/to/npx playwright test tests/ui.test.js

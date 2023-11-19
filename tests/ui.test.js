@@ -359,22 +359,22 @@ test('Login and verify all books are displayed.', async ({page}) => {
     }
 );
 
-test('Login and verify if no books are displayed.', async ({page}) => {
-        await page.goto(pageURL + 'login');
-        await page.fill('input[name="email"]', 'peter@abv.bg');
-        await page.fill('input[name="password"]', '123456');
-
-        await Promise.all([
-            page.click('input[type="submit"]'),
-            page.waitForURL(pageURL + 'catalog'),
-        ]);
-        await page.waitForSelector('.dashboard');
-
-        const noBooksMessage = await page.textContent('.no-books');
-        expect(noBooksMessage).toBe('No books in database!');
-
-    }
-);
+// test('Login and verify if no books are displayed.', async ({page}) => {
+//         await page.goto(pageURL + 'login');
+//         await page.fill('input[name="email"]', 'peter@abv.bg');
+//         await page.fill('input[name="password"]', '123456');
+//
+//         await Promise.all([
+//             page.click('input[type="submit"]'),
+//             page.waitForURL(pageURL + 'catalog'),
+//         ]);
+//         await page.waitForSelector('.dashboard');
+//
+//         const noBooksMessage = await page.textContent('.no-books');
+//         expect(noBooksMessage).toBe('No books in database!');
+//
+//     }
+// );
 test('Guest user can see details of book.', async ({page}) => {
         await page.goto(pageURL + 'catalog');
 

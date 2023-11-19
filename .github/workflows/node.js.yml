@@ -32,4 +32,4 @@ jobs:
     - name: Check and Modify File Permissions
       run: chmod +x tests/ui.test.js
     - name: Test program code with unit tests
-      run: /usr/bin/npx playwright test tests/ui.test.js
+      run: npx playwright test tests/ui.test.js

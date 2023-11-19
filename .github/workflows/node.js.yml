@@ -42,7 +42,7 @@ jobs:
       - name: Start Node.Server
         run: node server/server.js -c-1 &
       - name: Wait for the application to start
-        run: sleep
+        run: sleep 10
       - name: Test program code with unit tests
         run: node_modules/.bin/playwright test tests/ui.test.js
 

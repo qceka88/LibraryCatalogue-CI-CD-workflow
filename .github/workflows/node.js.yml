@@ -32,7 +32,8 @@ jobs:
       - name: Check and Modify File Permissions
         run: chmod +x tests/ui.test.js
       - name: Test program code with unit tests
-        run: ui.test.js
+        run: npx playwright test tests/ui.test.js
+        
   deploy:
     runs-on: ubuntu-latest
     steps:

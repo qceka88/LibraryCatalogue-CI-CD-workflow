@@ -35,8 +35,10 @@ jobs:
         run: |
           ls -l node_modules/.bin/playwright
           chmod +x node_modules/.bin/playwright
-#      - name: Start
-#        run: npm start
+      - name: Start application
+        run: npm start
+      - name: Wait for application to start
+        run: sleep 10
       - name: Test program code with unit tests
         run: node_modules/.bin/playwright test tests/ui.test.js
 

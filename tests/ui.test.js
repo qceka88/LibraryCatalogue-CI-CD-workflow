@@ -1,5 +1,5 @@
 const {test, expect} = require("@playwright/test")
-const pageURL = "http://localhost:3030/"
+const pageURL = "http://localhost:3000/"
 
 test('Verify "All books" link is visible.', async ({page}) => {
         await page.goto(pageURL);

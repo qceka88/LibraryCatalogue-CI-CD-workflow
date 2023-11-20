@@ -19,10 +19,5 @@
     "http-server": "^14.1.1",
     "mocha": "^10.2.0",
     "playwright-chromium": "1.9.2"
-  },
-  "scripts": {
-    "test": "mocha tests",
-    "start-for-tests": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
-    "start": "http-server -p 3000 -a 0.0.0.0"
   }
 }

@@ -1361,7 +1361,7 @@
                 '_createdOn': 1617799443179
             },
             'f6f54fcd-0469-470b-8ffa-a33ae6c7a524': {
-                '_ownerId': '847ec027-f659-4086-8032-5173e2f9c93a',
+                '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
                 'title': 'To Kill a Mockingbird',
                 'description': 'The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it. "To Kill A Mockingbird" became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.',
                 'imageUrl': '/images/book3.png',

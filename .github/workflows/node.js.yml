@@ -24,7 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - name: Install npm pack & Dependencies
-        run: npm install
+        run: sudo npm install
 #      - name: Install pack
 #        run: npm install --save-dev mocha
 #      - name: Install Playwright globally

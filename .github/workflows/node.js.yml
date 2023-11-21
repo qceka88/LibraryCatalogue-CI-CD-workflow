@@ -39,8 +39,10 @@ jobs:
 #          chmod +x node_modules/.bin/playwright
 #      - name: Start the application
 #        run: npx http-server -a localhost -p 3000 -P http://localhost:3000? -c-1 &
-       - name: Start the application
-         run: npm run start-app
+
+      - name: Start the application
+        run: npm run start-app
+
 #      - name: Start Node.Server
 #        run: node server/server.js -c-1 &
       - name: Wait for the application to start

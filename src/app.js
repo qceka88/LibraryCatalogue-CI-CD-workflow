@@ -54,5 +54,5 @@ function setUserNav() {
 async function logout() {
     await apiLogout();
     setUserNav();
-    page.redirect('/');
+    page.redirect('/catalog');
 }
